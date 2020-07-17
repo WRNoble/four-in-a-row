@@ -1,5 +1,3 @@
-const { array } = require("prop-types");
-
 class Player {
   constructor(name, id, color, active = false) {
     this.name = name;
@@ -11,14 +9,22 @@ class Player {
 
   //   Creates a token object based upon the token class and returns it to an array.
 
-  createToken(num) {
+  createTokens(num) {
     const tokens = [];
 
     for (let i = 0; i <= num; i++) {
       let token = new Token(i, this);
-      tokens.push(tokens);
+      tokens.push(token);
     }
 
     return tokens;
+  }
+
+  get unusedTokens() {
+    return this.tokens.filter((token) => !token.dropped);
+  }
+
+  get activeToken() {
+    return this.unusedTokens[0];
   }
 }
