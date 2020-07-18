@@ -2,28 +2,23 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #303853;
+  background-color: #ca2874;
   font-family: "Wendy One", sans-serif;
   font-size: 1.5em;
-  color: white;
+  color: rgb(105, 7, 7);
   text-align: center;
-  background: rgb(48, 56, 83); /* Old browsers */
+  background: rgb(6, 61, 245); /* Old browsers */
   background: -moz-linear-gradient(
     top,
-    rgba(48, 56, 83, 1) 0%,
-    rgba(32, 38, 55, 1) 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    rgba(48, 56, 83, 1) 0%,
-    rgba(32, 38, 55, 1) 100%
-  ); /* Chrome10-25,Safari5.1-6 */
+   rgba(55, 83, 177, 0.733) 0%,
+    rgb(138, 54, 54) 100%
+  );
   background: linear-gradient(
     to bottom,
-    rgba(48, 56, 83, 1) 0%,
-    rgba(32, 38, 55, 1) 100%
+    rgba(55, 83, 177, 0.733) 0%,
+    rgb(138, 54, 54) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303853', endColorstr='#202637',GradientType=0 ); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303853', endColorstr='#202637',GradientType=0 ); IE6-9
 }
 
 #game-scene {
@@ -33,7 +28,7 @@ body {
 }
 
 .table {
-  background-color: #8a1d15;
+  background-color: #3b11af;
   z-index: 10;
   width: 100%;
   position: fixed;
@@ -42,7 +37,7 @@ body {
 
 #begin-game {
   width: 200px;
-  background-color: #645a7e;
+  background-color: #3f12b1;
   border-radius: 8px;
   color: #fff;
   padding: 25px;
@@ -63,12 +58,13 @@ body {
   position: relative;
   width: 548px;
   margin: 0 auto;
-  border: 8px solid #5fcf80;
+  border: 8px solid #000000;
   height: 472px;
   border-radius: 7px;
   float: left;
   z-index: 15;
   box-sizing: border-box;
+  color: #0a0103;
 }
 
 #game-board-underlay {
@@ -123,14 +119,14 @@ circle {
   width: 20px;
   height: 350px;
   margin: 0 auto;
-  background-color: #e59a13;
+  background-color: #000000;
   border-radius: 5px 5px 0px 0px;
 }
 
 .stand-attachment {
   width: 15px;
   height: 20px;
-  background-color: #e59a13;
+  background-color: #000000;
   position: absolute;
   top: 15px;
 }
@@ -145,7 +141,7 @@ circle {
 
 .stand-foot {
   width: 100%;
-  background-color: #e59a13;
+  background-color: #000000;
   height: 20px;
   border-radius: 8px 8px 0px 0px;
   top: 350px;
@@ -159,4 +155,8 @@ circle {
   top: -60px;
   left: 0;
   right: 0;
+}
+
+.board-back {
+  color: gold;
 }
