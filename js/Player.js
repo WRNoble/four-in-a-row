@@ -1,18 +1,16 @@
 class Player {
   constructor(name, id, color, active = false) {
     this.name = name;
-    this.tokens = this.createTokens(21);
     this.id = id;
     this.color = color;
     this.active = active;
+    this.tokens = this.createTokens(21);
   }
-
-  //   Creates a token object based upon the token class and returns it to an array.
 
   createTokens(num) {
     const tokens = [];
 
-    for (let i = 0; i <= num; i++) {
+    for (let i = 0; i < num; i++) {
       let token = new Token(i, this);
       tokens.push(token);
     }
@@ -26,5 +24,9 @@ class Player {
 
   get activeToken() {
     return this.unusedTokens[0];
+  }
+
+  checkTokens() {
+    return this.unusedTokens.length == 0 ? false : true;
   }
 }
